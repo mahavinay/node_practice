@@ -6,5 +6,3 @@ app.get("/home", (request, response, next) => {
     console.log(request);
     response.send("<h1>Welcome Ironhacker. :)</h1>");
 });
-
-app.listen(3000);

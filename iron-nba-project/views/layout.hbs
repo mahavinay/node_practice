@@ -1,0 +1,72 @@
+<!-- views/layout.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>IronNBA</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">IronNBA</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/">
+            Home
+            <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-item nav-link" href="/players">Players</a>
+          <a class="nav-item nav-link" href="/teams">Teams</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+  <!-- views/index.hbs -->
+
+<div class="container">
+  <div class="row justify-content-around">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="http://kenikin.com/w/nba-players-Wallpaper-Full-HD-number-yM1.jpg" alt="NBA players">
+        <div class="card-body">
+          <h5 class="card-title">Players</h5>
+          <p class="card-text">Check the top NBA players, according to Ironhack Curriculum staff.</p>
+          <a href="/players" class="btn btn-primary">See Players</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OERZ8iocfWup4uRUhjxY_zncbKN02QawHJMqp9qa2RjC6PaI"
+            alt="NBA teams">
+        <div class="card-body">
+          <h5 class="card-title">Teams</h5>
+          <p class="card-text">Here we can check all NBA Teams</p>
+          <a href="/teams" class="btn btn-primary">See Teams</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<main>
+
+</main>
+{{{body}}}
+    </main>
+  </body>
+</html>
